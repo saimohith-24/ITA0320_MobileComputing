@@ -1,0 +1,10 @@
+{
+  "description": "Interactive educational presentation illustrating cellular system components and architectures with clickable diagrams for mobile computing students and labs.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

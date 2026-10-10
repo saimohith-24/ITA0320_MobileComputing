@@ -1,0 +1,196 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #151515;
+  background: #ffffff;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+button {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.mobile-screen {
+  width: min(390px, 100%);
+  min-height: 844px;
+  margin: 0 auto;
+  padding: 46px 24px 32px;
+  background: #ffffff;
+}
+
+.page-header {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #2468b4;
+}
+
+.page-header h1 {
+  margin: 0;
+  color: #185fa9;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.network-section {
+  padding-top: 28px;
+}
+
+.network-section h2 {
+  margin: 0 0 8px;
+  color: #151515;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.setting-row {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #c8c8c8;
+  font-size: 15px;
+}
+
+.row-label {
+  font-weight: 400;
+}
+
+.row-value,
+.status-value,
+.signal-value {
+  font-weight: 600;
+}
+
+.status-value,
+.signal-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border: 1px solid #176f34;
+  border-radius: 50%;
+  background: #269447;
+}
+
+.signal-bars {
+  width: 24px;
+  height: 19px;
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.bar {
+  width: 4px;
+  background: #151515;
+  border: 1px solid #151515;
+}
+
+.bar-1 {
+  height: 6px;
+}
+
+.bar-2 {
+  height: 10px;
+}
+
+.bar-3 {
+  height: 14px;
+}
+
+.bar-4 {
+  height: 18px;
+}
+
+.connectivity-section {
+  padding-top: 42px;
+}
+
+.mobile-data-row > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.data-state {
+  color: #185fa9;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.toggle {
+  width: 46px;
+  height: 25px;
+  position: relative;
+  flex: 0 0 auto;
+  padding: 2px;
+  border: 1px solid #777777;
+  border-radius: 13px;
+  background: #dddddd;
+  cursor: pointer;
+}
+
+.toggle-knob {
+  display: block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #777777;
+  border-radius: 50%;
+  background: #ffffff;
+  transform: translateX(0);
+}
+
+.toggle-on {
+  border-color: #185fa9;
+  background: #2473bd;
+}
+
+.toggle-on .toggle-knob {
+  border-color: #ffffff;
+  transform: translateX(20px);
+}
+
+.check-button {
+  width: 100%;
+  height: 46px;
+  margin-top: 34px;
+  border: 1px solid #185fa9;
+  border-radius: 3px;
+  color: #ffffff;
+  background: #185fa9;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.check-button:active {
+  background: #104d8b;
+}
+
+.toggle:focus-visible,
+.check-button:focus-visible {
+  outline: 2px solid #151515;
+  outline-offset: 2px;
+}

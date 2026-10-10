@@ -1,0 +1,10 @@
+{
+  "description": "This mobile app provides users with a straightforward interface to monitor network connectivity, displaying status, signal strength, and data settings.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
